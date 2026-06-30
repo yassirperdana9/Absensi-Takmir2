@@ -1,0 +1,175 @@
+/* ==========================================
+   ADMIN.CSS
+   Dashboard Admin
+   Masjid Al-Amin Sidosermo
+========================================== */
+
+/* GRID CARD */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* CARD STATISTIK */
+
+.stat-card{
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.stat-card h3{
+
+    color:#666;
+
+    font-size:16px;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.stat-card h2{
+
+    color:#166534;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+
+/* CARD */
+
+.card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+
+/* TABLE */
+
+.ranking-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.ranking-table th{
+
+    background:#166534;
+
+    color:#fff;
+
+    padding:14px;
+
+    font-weight:600;
+
+}
+
+.ranking-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.ranking-table tr:hover{
+
+    background:#f5f5f5;
+
+}
+
+.ranking-table td:first-child{
+
+    text-align:center;
+
+    width:60px;
+
+}
+
+.ranking-table td:last-child{
+
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#166534;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.dashboard-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stat-card h2{
+
+    font-size:32px;
+
+}
+
+.card{
+
+    padding:18px;
+
+}
+
+.ranking-table th,
+
+.ranking-table td{
+
+    padding:10px;
+
+    font-size:14px;
+
+}
+
+}
