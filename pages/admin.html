@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Admin | Absensi Takmir</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <link rel="icon" href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <img src="../assets/logo.png" class="logo" alt="Logo Masjid">
+
+            <div>
+
+                <h1>Dashboard Admin</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTENT -->
+
+    <main class="container">
+
+        <!-- STATISTIK -->
+
+        <section class="dashboard-grid">
+
+            <div class="stat-card">
+
+                <h3>Total Takmir</h3>
+
+                <h2 id="totalTakmir">0</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Total Absensi</h3>
+
+                <h2 id="totalAbsensi">0</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Total Shalat</h3>
+
+                <h2 id="totalShalat">0</h2>
+
+            </div>
+
+        </section>
+
+        <!-- RANKING -->
+
+        <section class="card">
+
+            <h2>🏆 Ranking Takmir</h2>
+
+            <table class="ranking-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Total</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="rankingBody">
+
+                    <tr>
+
+                        <td colspan="3" style="text-align:center">
+
+                            Memuat data...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Takmir Masjid Al-Amin Sidosermo</p>
+
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>
